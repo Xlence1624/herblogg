@@ -239,6 +239,10 @@ export const createPost = async (req, res) => {
       published,
       readTime,
       date,
+      progressStamp1,
+      progressStamp2,
+      progressStamp3,
+      progressStamp4,
     } = req.body;
 
     // Check image
@@ -267,7 +271,10 @@ export const createPost = async (req, res) => {
       title,
       content,
       category,
-
+    progressStamp1,
+      progressStamp2,
+      progressStamp3,
+      progressStamp4,
       published:
         published === "true" || published === true,
 
