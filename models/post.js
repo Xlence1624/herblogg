@@ -14,6 +14,23 @@ const postSchema = new mongoose.Schema(
       required: true,
     },
 
+       progressStamp1: {
+      type: String,
+      required: true,
+    },
+       progressStamp2: {
+      type: String,
+      required: true,
+    },
+
+       progressStamp3: {
+      type: String,
+      required: true,
+    },
+   progressStamp4: {
+      type: String,
+      required: true,
+    },
     author: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
