@@ -24,6 +24,10 @@ const postSchema = new mongoose.Schema(
       type: String,
       default: null,
     },
+      readTime: {
+      type: String,
+      default: null,
+    },
 
        imagePublicId: {
       type: String,
