@@ -271,10 +271,13 @@ export const createPost = async (req, res) => {
       title,
       content,
       category,
-    progressStamp1,
-      progressStamp2,
-      progressStamp3,
-      progressStamp4,
+      // Map your independent fields into the exactly-4-item array your schema expects
+      progressStamps: [
+        progressStamp1 || "",
+        progressStamp2 || "",
+        progressStamp3 || "",
+        progressStamp4 || ""
+      ],
       published:
         published === "true" || published === true,
 
@@ -303,6 +306,7 @@ export const createPost = async (req, res) => {
     });
   }
 };
+
 // @desc    Delete a post
 // @route   DELETE /api/posts/:id
 export const deletePost = async (req, res) => {
